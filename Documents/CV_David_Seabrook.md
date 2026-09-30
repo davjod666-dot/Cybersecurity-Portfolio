@@ -43,15 +43,7 @@ The [portfolio index](../SOC-Investigations/README.md) identifies published work
 **2026–present · Remote, Australia**
 
 - Evaluate AI-generated outputs for accuracy, relevance, safety, and instruction adherence.
-- Apply annotation criteria and review generated outputs in remote contracting workflows.
-
-### Independent Study & Cybersecurity Lab Projects
-
-**2025–2026 · Newcastle, NSW**
-
-- Completed structured development across cybersecurity, Azure, AI governance, secure software, and defensive security while building a practical home lab.
-- Studied AI governance and responsible AI principles and prepared learning notes.
-- Documented network and system-log investigations, including uncertainty and evidence gaps.
+- Annotate outputs against task-specific criteria in remote contracting workflows.
 
 ### Trainee Paramedic — NSW Ambulance Service
 
@@ -78,12 +70,14 @@ The [portfolio index](../SOC-Investigations/README.md) identifies published work
 
 ## Selected learning
 
+**2025–2026 · Independent study and home-lab development**, alongside the practical work described above.
+
 - HarvardX — CS50’s Introduction to Cybersecurity.
 - Security Blue Team — Blue Team Junior Analyst training pathway.
 - Linux Foundation — LFEL1012 Secure AI/ML Driven Software Development; LFS120 Conversational AI Ensuring Compliance and Mitigating Risks; LFS118 Ethical Principles for Conversational AI.
 - LinkedIn Learning — Building an AI Governance Program.
 - LinkedIn Learning / United Nations University — Responsible AI in a Global Context Professional Certificate.
-- Microsoft Learn — 69 completed modules, 13 learning paths, and 50 hours 59 minutes of recorded training as of 1 October 2026, covering Azure governance, security, identity, compliance, and AI.
+- Microsoft Learn — Azure governance, security, identity, compliance, and AI learning; dated transcript linked in the qualification inventory.
 
 See [Qualifications](Qualifications.md) for dates, source scope, and additional course completions. Microsoft learning paths and exam-preparation courses are not presented as Microsoft exam certifications.
 

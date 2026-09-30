@@ -8,6 +8,8 @@
 
 **Scope:** AI-assisted configuration review, implementation, and isolated validation.
 
+**Contribution:** I defined the workstation requirements and requested the hardening changes. Codex assisted with configuration and code inspection, implementation, and test execution. This case records that assisted work.
+
 ## Question
 
 Would custom ping suppression remain consistent when UFW reloaded its own kernel settings?
@@ -64,5 +66,17 @@ The temporary network was removed after testing. Scan alerts use a 60-second win
 ## Control-assurance lesson
 
 Configuration files are evidence of intended policy. Read-back checks and controlled tests provide evidence of current behaviour. Check all services that can apply the same kernel setting, then validate after they reload.
+
+## Read-only checks for the current configuration
+
+On this workstation, the following checks inspect the live setting, its configuration sources, and the installed UFW reload code:
+
+```sh
+sysctl net.ipv4.icmp_echo_ignore_all
+rg -n 'icmp_echo_ignore_all' /etc/sysctl.d/ /etc/ufw/sysctl.conf
+rg -n 'ufw_reload|ufw_start|IPT_SYSCTL|sysctl' /usr/lib/ufw/ufw-init-functions /etc/default/ufw
+```
+
+Expected policy: both configuration sources assign `1`, and the live value is `1`. These commands are a verification guide, not a preserved transcript of the original test. A read-back alone does not reproduce the network test or prove reboot persistence.
 
 [Control register](../../Risk-And-Controls/Host-Hardening-Control-Register.md) · [Investigation methods](../../Tools-And-Methods/README.md)
