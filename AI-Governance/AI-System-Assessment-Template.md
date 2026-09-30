@@ -1,6 +1,6 @@
 # AI System Assessment Template
 
-**Status:** Unfilled portfolio template. Prepared during the repository revamp; not evidence of a completed client assessment.
+**Status:** Unfilled learning template; an applied assessment is still to complete.
 
 ## 1. System and intended use
 
