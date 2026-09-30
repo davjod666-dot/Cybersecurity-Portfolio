@@ -1,27 +1,21 @@
-# AI Governance & Responsible AI
+# AI Governance Learning
 
-My focus is on translating AI-related risks into questions that can be answered with evidence: who owns the system, how it is used, which harms are foreseeable, which controls exist, and how those controls are tested.
+I’m developing AI governance skills alongside AI evaluation and annotation work. My completed courses cover responsible AI, governance program design, secure AI/ML development, and conversational AI ethics and risk.
 
-## Background and learning
+[Qualifications](../Documents/Qualifications.md) · [CV](../Documents/CV_David_Seabrook.md)
 
-The supplied CV records current AI evaluation and annotation work, independent AI governance study, and experience assessing risk in emergency services. Supporting course records include secure AI/ML development, conversational AI ethics and risk, AI governance program design, and responsible AI in a global context.
+## Assessment resource
 
-[Qualification inventory](../Documents/Qualifications.md) · [CV](../Documents/CV_David_Seabrook.md)
+[AI system assessment template](AI-System-Assessment-Template.md)
 
-## Portfolio resources
+The template structures questions about intended use, ownership, data flows, foreseeable harms, control testing, human oversight, and change management. It is unfilled; a completed applied assessment is not yet published.
 
-- [AI system assessment template](AI-System-Assessment-Template.md): a reusable structure for a future authorised assessment.
-- [Risk and control assurance](../Risk-And-Controls/README.md): a completed technical example of recording controls and validation limits.
-- [Investigation methods](../Tools-And-Methods/README.md): evidence handling and reporting standards.
+For a completed technical control-recording exercise, see the [host-hardening control register](../Risk-And-Controls/Host-Hardening-Control-Register.md).
 
-The assessment template was prepared as a portfolio resource during this revamp. It has not been applied to an organisation's production AI system. It does not establish legal compliance or certification against a standard.
+## Framework study
 
-## Reference frameworks
+I am studying the [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework), [Microsoft responsible AI resources](https://www.microsoft.com/en-us/ai/responsible-ai), and introductory ISO/IEC 42001 and EU AI Act concepts. This is learning, rather than experience delivering a certified management system or legal compliance assessment.
 
-I am studying the [NIST AI Risk Management Framework](https://www.nist.gov/itl/ai-risk-management-framework) and [Microsoft's responsible AI resources](https://www.microsoft.com/en-us/ai/responsible-ai). The NIST framework is voluntary guidance; an analyst's use of it should not be presented as a compliance attestation.
+## Next applied exercise
 
-ISO/IEC 42001 and EU AI Act concepts also appear in my learning records. Formal control mappings and legal applicability decisions require the relevant source text, system scope, and competent review.
-
-## Next practical work
-
-Apply the assessment template to a clearly scoped lab AI workflow, publish a redacted risk register, document evaluation criteria, and record where human approval is required. These are planned exercises, not completed assessments.
+Assess a small lab AI workflow: define its purpose and data, identify risks, test selected controls, and document human approval and residual risk. Publish the results with evaluation criteria and evidence. This exercise is planned.

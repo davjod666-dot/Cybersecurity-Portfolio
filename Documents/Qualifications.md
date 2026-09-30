@@ -1,8 +1,8 @@
 # Qualifications & Professional Learning
 
-**Evidence reviewed:** 1 October 2026.
+**Last updated:** 1 October 2026.
 
-Titles and dates below were checked against the supplied certificates, credential bundle, or Microsoft Learn transcript export. This is a record of reviewed documents, not independent authentication with every issuer. Training completion is distinguished from exam-based certification.
+Completed courses and learning paths are listed below with dates and available evidence links. They are separate from exam-based certifications.
 
 ## AI governance and secure AI
 
@@ -11,15 +11,15 @@ Titles and dates below were checked against the supplied certificates, credentia
 | Responsible AI in a Global Context Professional Certificate by the United Nations University | LinkedIn Learning / United Nations University | 28 September 2026 | [Learning-path completion certificate](https://drive.google.com/file/d/1Kh-ZvZFCqdq8AkoJTzfkE0DaDhd-5KJj/view) |
 | Building an AI Governance Program | LinkedIn Learning | 18 September 2026 | [Course-completion certificate](https://drive.google.com/file/d/1P8cwTj9renWgjM5Xtvaj7YQuqaqspC3m/view) |
 | Secure AI/ML Driven Software Development — LFEL1012 | Linux Foundation | 18 August 2026 | [Course-completion certificate](https://drive.google.com/file/d/1t5FI2GLAbUefvOIailLl10EzQEFIWT25/view) |
-| Conversational AI Ensuring Compliance and Mitigating Risks — LFS120 | Linux Foundation | 10 May 2026 | Supplied certificate bundle; [Credly profile](https://www.credly.com/users/david-seabrook.dd4d737b) |
-| Ethical Principles for Conversational AI — LFS118 | Linux Foundation | 6 May 2026 | Supplied certificate bundle; [Credly profile](https://www.credly.com/users/david-seabrook.dd4d737b) |
-| Microsoft Responsible AI Standard: Building Trustworthy AI | Udemy | 6 May 2026 | Supplied course-completion certificate |
+| Conversational AI Ensuring Compliance and Mitigating Risks — LFS120 | Linux Foundation | 10 May 2026 | Certificate bundle; [Credly profile](https://www.credly.com/users/david-seabrook.dd4d737b) |
+| Ethical Principles for Conversational AI — LFS118 | Linux Foundation | 6 May 2026 | Certificate bundle; [Credly profile](https://www.credly.com/users/david-seabrook.dd4d737b) |
+| Microsoft Responsible AI Standard: Building Trustworthy AI | Udemy | 6 May 2026 | Course-completion certificate |
 
 ## Cybersecurity and cloud foundations
 
 | Course / training | Provider | Completion | Evidence scope |
 | --- | --- | --- | --- |
-| CS50 Cybersecurity: CS50’s Introduction to Cybersecurity | HarvardX | 1 May 2026 | Verified-course certificate in supplied bundle; distinct from CS50x Computer Science |
+| CS50 Cybersecurity: CS50’s Introduction to Cybersecurity | HarvardX | 1 May 2026 | Verified-course certificate in credential bundle; distinct from CS50x Computer Science |
 | Microsoft Sentinel course with hands on sims for beginners | Udemy | 12 February 2026 | Course-completion certificate; 7 course hours |
 | Introduction to Cloud Infrastructure Technologies — LFS151 | Linux Foundation | 2 February 2026 | Course-completion certificate |
 | Blue Team Junior Analyst training pathway | Security Blue Team | 12 January 2026 | Certificate for completing practical entry-level courses; not presented as BTL1 certification |
@@ -29,7 +29,7 @@ Titles and dates below were checked against the supplied certificates, credentia
 
 ## Microsoft Learn
 
-The supplied transcript export dated **1 October 2026** records **69 completed modules, 13 completed learning paths, and 50 hours 59 minutes of training**. These figures supersede the earlier totals in the supplied CV and older qualification summary. Training hours are the platform's recorded learning total, not production work experience.
+My Microsoft Learn transcript dated **1 October 2026** records **69 completed modules, 13 completed learning paths, and 50 hours 59 minutes of platform-recorded training**.
 
 [Public transcript](https://learn.microsoft.com/en-us/users/davidseabrook-9387/transcript/7o8oueyo1z6ke5v) · [Reviewed PDF export](https://drive.google.com/file/d/1APjCbkxYWDGuJVAbeYe07PqjeDL4y5qj/view)
 
@@ -53,16 +53,13 @@ Selected completed learning paths:
 
 Recent modules include agent governance, AI workload protection, and guardrails in Azure AI Foundry. Completion of an AZ-305, SC-200, or fundamentals learning path does not establish completion of the corresponding certification exam.
 
-## Additional learning listed in the CV
-
-- Microsoft Azure AI Essentials Professional Certificate — listed in the supplied CV; an individual named completion certificate was not located in the reviewed material.
-- BlueDot Impact — The Future of AI — listed in the CV and accompanied by a badge image; the image does not include a learner name or completion date.
-
-These remain separate from the dated document-supported completion tables until individual evidence is available.
-
 ## Formal qualifications
 
-The supplied CV lists a Diploma of Emergency Healthcare, Certificate IV in Leadership & Management, and Certificate IV in Emergency Management. Award documents and issue dates were not included in the reviewed material; these are recorded as CV-sourced qualifications.
+- Diploma of Emergency Healthcare.
+- Certificate IV in Leadership & Management.
+- Certificate IV in Emergency Management.
+
+Award documents and issue dates are not published here.
 
 ## Evidence handling
 

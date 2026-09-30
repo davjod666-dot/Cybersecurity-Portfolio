@@ -1,31 +1,33 @@
 # Portfolio Highlights
 
-**David Seabrook · AI governance, cyber risk, and security operations**
+**David Seabrook · Junior cyber GRC and security assurance**
 
-## A technical finding with a governance outcome
+## Completed workstation exercise
 
-[**Linux hardening and UFW sysctl precedence**](Case-Studies/Linux-Hardening/UFW-Sysctl-Conflict.md)
+[Linux hardening: UFW/sysctl configuration conflict](Case-Studies/Linux-Hardening/UFW-Sysctl-Conflict.md)
 
-A host-hardening review found two configuration sources assigning different values to the same ping-suppression setting. Inspection of UFW’s reload code established the override path. Aligning the values removed the conflict; a subsequent firewall reload and an isolated network test checked the live result.
+Two configuration files assigned different values to the ping-suppression setting. An AI-assisted review inspected UFW’s reload path, aligned the settings, and checked the live value after reload. An isolated network test received no ping replies and triggered the configured scan alert.
 
-The accompanying [control register](Risk-And-Controls/Host-Hardening-Control-Register.md) records objectives, evidence, limits, and residual risk. The work demonstrates why a configured control and a validated control are different things.
+The case includes configuration excerpts, recorded results, and limitations. Full raw test output is not published. The pre-fix reset was not deliberately reproduced, and reboot persistence remains untested.
 
-## AI governance and responsible AI
+[Host-hardening control register](Risk-And-Controls/Host-Hardening-Control-Register.md)
 
-[**AI governance section**](AI-Governance/README.md)
+This companion document records each control’s objective, validation, remaining risk, and follow-up. It is a personal-workstation example, without an enterprise compliance claim.
 
-This section connects documented study and current AI evaluation work with an assessment structure: purpose, ownership, data, foreseeable harms, oversight, testing, and change control. The [assessment template](AI-Governance/AI-System-Assessment-Template.md) is a portfolio resource; it is not a completed organisational assessment or a compliance attestation.
+## AI governance learning
 
-## Security operations
+[AI governance section](AI-Governance/README.md)
 
-[**SOC investigations index**](SOC-Investigations/README.md)
+Coursework and an unfilled assessment template cover system ownership, data flows, foreseeable harms, control testing, and human oversight. A completed applied assessment is not yet published.
 
-Two original network cases remain visible as learning briefs: the Telstra DHCP/time/WAN review and STUN/multicast correlation. They show investigation questions relevant to SOC triage, with their evidence limits stated. Eleven overlapping or less-supported early notes are preserved in a separate learning archive. The live-tested Linux hardening case leads the technical showcase.
+## Defensive lab practice
 
-Additional experience described in the supplied CV includes Wazuh and Suricata deployment, a segmented home lab, and an FTP malware-transfer investigation. Supporting project artefacts can be added when ready; the repository does not imply they are already published.
+[Defensive practice](SOC-Investigations/README.md)
+
+My home-lab experience includes VLAN segmentation, Wazuh, Suricata, and packet analysis. Architecture, alert-investigation, and packet-timeline artefacts are still to publish.
 
 ## Professional background
 
-15+ years across emergency services provides a foundation in operational risk, proportionate response, escalation, and legally significant documentation. Current AI evaluation work adds output review, structured annotation, and quality reasoning.
+15+ years in emergency services contributes experience in operational risk, triage, escalation, and clinical and statutory documentation. My current AI contracting work involves reviewing generated outputs and applying annotation criteria.
 
-[CV](Documents/CV_David_Seabrook.md) · [Qualifications](Documents/Qualifications.md) · [Investigation methods](Tools-And-Methods/README.md)
+[CV](Documents/CV_David_Seabrook.md) · [Qualifications](Documents/Qualifications.md)

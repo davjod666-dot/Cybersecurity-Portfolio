@@ -1,6 +1,6 @@
 # David Seabrook
 
-**Cybersecurity GRC · AI Governance & Risk · Security Operations**
+**Junior Cyber GRC & Security Assurance · AI Governance Interests**
 
 Newcastle, NSW, Australia
 
@@ -8,11 +8,13 @@ Newcastle, NSW, Australia
 
 ## Professional profile
 
-Transitioning 15+ years of frontline emergency-services experience in operational risk, incident response, and evidence-grade documentation into cybersecurity GRC, AI governance, and security operations. Combines structured learning with practical home-lab work in monitoring, log analysis, network segmentation, and defensive controls. Seeking entry-level cyber and governance roles.
+Career changer with 15+ years in emergency services, including incident triage, operational risk assessment, escalation, and clinical and statutory documentation. Currently undertaking AI evaluation work and developing cybersecurity skills through courses and home-lab projects. Seeking a junior cyber GRC or security assurance role, with an interest in AI governance.
 
 ## Target roles
 
-Cybersecurity GRC · AI Governance & Risk · Junior SOC / Blue Team · Cloud Security & Compliance
+Junior cyber GRC analyst · Security assurance analyst
+
+Developing interests: AI governance and defensive security operations.
 
 ## Capabilities
 
@@ -27,9 +29,9 @@ Cybersecurity GRC · AI Governance & Risk · Junior SOC / Blue Team · Cloud Sec
 
 - Built and operate a managed home-lab network using router-on-a-stick architecture, managed switching, VLAN segmentation, and traffic isolation.
 - Deployed Wazuh for log aggregation, alert correlation, and endpoint visibility across Windows and Linux; configured Suricata for network intrusion detection.
-- Performed packet analysis, indicator identification, and attack-chain reconstruction, including an FTP malware-transfer investigation.
-- Prepared structured investigation write-ups and vendor-facing security observations.
-- Evaluated Azure AI, agentic workflows, MCP tooling, and responsible AI controls through Microsoft Learn and independent study.
+- Practised packet analysis and indicator identification, including an FTP malware-transfer exercise.
+- Wrote summaries of network and system-log investigations.
+- Studied Azure AI, agentic workflows, MCP tooling, and responsible AI controls through Microsoft Learn and independent study.
 - Completed an assisted Linux hardening review with a verified UFW/sysctl configuration finding and isolated network tests.
 
 The [portfolio index](../SOC-Investigations/README.md) identifies published work and projects awaiting supporting artefacts.
@@ -41,15 +43,15 @@ The [portfolio index](../SOC-Investigations/README.md) identifies published work
 **2026–present · Remote, Australia**
 
 - Evaluate AI-generated outputs for accuracy, relevance, safety, and instruction adherence.
-- Apply structured annotation, quality review, and evidence-based reasoning in remote production workflows.
+- Apply annotation criteria and review generated outputs in remote contracting workflows.
 
-### Independent Cybersecurity & AI Governance Researcher — Self-directed practice
+### Independent Study & Cybersecurity Lab Projects
 
 **2025–2026 · Newcastle, NSW**
 
 - Completed structured development across cybersecurity, Azure, AI governance, secure software, and defensive security while building a practical home lab.
-- Developed governance notes and control-focused analysis informed by AI risk and responsible AI principles.
-- Prepared investigative write-ups using scoped findings and evidence limitations.
+- Studied AI governance and responsible AI principles and prepared learning notes.
+- Documented network and system-log investigations, including uncertainty and evidence gaps.
 
 ### Trainee Paramedic — NSW Ambulance Service
 
@@ -85,15 +87,7 @@ The [portfolio index](../SOC-Investigations/README.md) identifies published work
 
 See [Qualifications](Qualifications.md) for dates, source scope, and additional course completions. Microsoft learning paths and exam-preparation courses are not presented as Microsoft exam certifications.
 
-## Community involvement
-
-**Microsoft Azure Q&A Champions Program — community participant**
-
-Developing Azure technical communication and troubleshooting through community workflows and preparation of scoped, customer-focused responses. This participation is separate from Microsoft employment.
-
 ## Formal qualifications
-
-As listed in the supplied professional CV:
 
 - Diploma of Emergency Healthcare.
 - Certificate IV in Leadership & Management.
