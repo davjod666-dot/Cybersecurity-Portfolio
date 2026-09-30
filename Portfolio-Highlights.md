@@ -1,130 +1,31 @@
-📌 Portfolio Highlights — BreachFix360 (D. Seabrook)
+# Portfolio Highlights
 
-Early-career SOC Analyst • Digital Forensics • Network Defence • Incident Response
+**David Seabrook · AI governance, cyber risk, and security operations**
 
-🔎 Summary
+## A technical finding with a governance outcome
 
-I’m an emerging SOC analyst with a background in emergency services, risk management, and front-line decision-making.
-Rather than spend months reading theory before touching real tools, I’ve taken a hands-on-first approach — building, breaking, analysing and documenting real systems.
+[**Linux hardening and UFW sysctl precedence**](Case-Studies/Linux-Hardening/UFW-Sysctl-Conflict.md)
 
-This portfolio contains practical case studies based on actual log files, packet captures, router events, system behaviours, and forensic workflows I have analysed.
+A host-hardening review found two configuration sources assigning different values to the same ping-suppression setting. Inspection of UFW’s reload code established the override path. Aligning the values removed the conflict; a subsequent firewall reload and an isolated network test checked the live result.
 
-Everything here is written the way a SOC analyst thinks:
-evidence → timeline → hypothesis → verification → conclusion.
+The accompanying [control register](Risk-And-Controls/Host-Hardening-Control-Register.md) records objectives, evidence, limits, and residual risk. The work demonstrates why a configured control and a validated control are different things.
 
-📁 Portfolio Contents
-🗂️ 1. System Log Analysis — Case Studies
+## AI governance and responsible AI
 
-Deep-dive investigations correlating iOS/macOS logs, network behaviour, and system processes.
-Each case demonstrates detection logic, triage approach, and structured reasoning.
+[**AI governance section**](AI-Governance/README.md)
 
-Case 1 — iOS TCC Events & Permission Mapping
-Tracks system permission calls, TCC prompts, and process behaviour.
+This section connects documented study and current AI evaluation work with an assessment structure: purpose, ownership, data, foreseeable harms, oversight, testing, and change control. The [assessment template](AI-Governance/AI-System-Assessment-Template.md) is a portfolio resource; it is not a completed organisational assessment or a compliance attestation.
 
-Case 2 — AWDL & Peer Services Analysis
-Identifies legitimate vs suspicious AWDL/Wi-Fi Direct traffic — a common false-positive area.
+## Security operations
 
-Case 3 — NAT / STUN Bursts & Multicast Traffic
-A breakdown of STUN, NAT rebinding misconceptions, and how to recognise benign vs malicious patterns.
+[**SOC investigations index**](SOC-Investigations/README.md)
 
-Case 4 — RunningBoard & Background Task Behaviour
-Shows how macOS manages power, CPU cycles, assertions and why this often gets mistaken for compromise.
+Two original network cases remain visible as learning briefs: the Telstra DHCP/time/WAN review and STUN/multicast correlation. They show investigation questions relevant to SOC triage, with their evidence limits stated. Eleven overlapping or less-supported early notes are preserved in a separate learning archive. The live-tested Linux hardening case leads the technical showcase.
 
-Case 5 — Lockdown Mode vs Standard iOS Hardening
-Compares behavioural differences and helps identify when iOS is simply enforcing stricter rules.
+Additional experience described in the supplied CV includes Wazuh and Suricata deployment, a segmented home lab, and an FTP malware-transfer investigation. Supporting project artefacts can be added when ready; the repository does not imply they are already published.
 
-Case 6 — NetworkExtension & UUID Cache Interpretation
-Analyses tunnels, VPN extents, flows, and explains what’s normal in Apple’s NE subsystem.
+## Professional background
 
-Case 7 — Full Correlation: UI vs Backend Logs
-End-to-end case correlating:
+15+ years across emergency services provides a foundation in operational risk, proportionate response, escalation, and legally significant documentation. Current AI evaluation work adds output review, structured annotation, and quality reasoning.
 
-what the device displayed
-
-what the system actually did
-Perfect for demonstrating SOC triage logic.
-
-🗂️ 2. Network Analysis — Case Studies
-
-Real-world packet captures and router logs analysed using Wireshark and DumaOS/Telstra modem logs.
-
-Case 1 — Telstra Router (Cobra/DumaOS) Log Review
-Includes traceroutes, conntrack events, BBLOAT tests, QoS analysis, NAT reflections, and MAC movement.
-A strong showcase of network fundamentals and practical triage.
-
-🗂️ 3. Forensic Playbooks
-
-Step-by-step playbooks I built while learning to triage logs and system events:
-
-AWDL Analysis Playbook
-
-NAT / STUN Triage Playbook
-
-System Log Correlation Playbook
-
-iOS/macOS Hardening Notes
-
-Network Triage Quick Reference
-
-🗂️ 4. SOC-Ready Documents
-
-Professional SOC/IR CV (D. Seabrook)
-
-Portfolio Highlights (this file)
-
-README.md — repo overview + roadmap
-
-🎯 Why This Portfolio Matters
-
-I’m early in my cyber journey — but I bring:
-
-real world emergency-service decision making
-
-high-pressure triage experience
-
-procedural discipline
-
-a “learn fast / hands on, curious” mindset
-
-and genuine curiosity for how systems break and behave
-
-Every case in this repo shows my capability to:
-
-✅ interpret noisy logs
-✅ recognise false positives
-✅ think like a defender
-✅ document clearly
-✅ correlate multi-source evidence
-✅ explain complex things simply
-
-Exactly what a SOC analyst needs.
-
-🚧 Roadmap (In Progress)
-
-CS50X Harvard's Introduction to Cybersecurity - Completed 
-
-Security Blue Team Junior Analyst - Completed
-
-Linux Foundation Introduction to Linux - Completed
-
-Linux Foundation OWASP Top Ten Security Threats - Completed
-
-Long-Term (In Progress)
-
-Build a small home SOC lab using VM - Completed
-
-Complete HTB Activities
-
-SIEM parsing simulations (Elastic / Wazuh / LimaCharlie)
-
-IR playbook expansions
-
-Threat-hunting exercises
-
-Practice using tools EG: Wireshark, NMAP, Nessus etc
-
-👤 Author
-
-David Seabrook
-Blue Team Junior
-Newcastle NSW, Australia
+[CV](Documents/CV_David_Seabrook.md) · [Qualifications](Documents/Qualifications.md) · [Investigation methods](Tools-And-Methods/README.md)

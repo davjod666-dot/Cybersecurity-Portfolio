@@ -1,113 +1,104 @@
-David Seabrook — SOC Analyst (Entry-Level) | Blue Team | DFIR | Threat Detection
+# David Seabrook
 
-Location: NSW, Australia
-Focus Areas: Network Defence • Log Analysis • Threat Hunting • Device Behaviour Forensics
-Style: Evidence-based • Log-driven • Hands on
+**Cybersecurity GRC · AI Governance & Risk · Security Operations**
 
-Profile
+Newcastle, NSW, Australia
 
-Motivated blue-team analyst with a strong foundation in system forensics, network investigation, and real-world anomaly detection. Experienced with Apple ecosystem logs, router forensics, STUN/Multicast inspection, UI/firmware mismatch analysis, and protocol behaviour mapping.
+[seabrook.research@proton.me](mailto:seabrook.research@proton.me) · [LinkedIn](https://www.linkedin.com/in/david-s-392aa9432) · [GitHub portfolio](https://github.com/davjod666-dot/Cybersecurity-Portfolio)
 
-Driven by lived experience and a defensive mindset — built from experience, driven by defence.
-Focused on accuracy, structure, and evidence over assumptions.
+## Professional profile
 
-Technical Skills
+Transitioning 15+ years of frontline emergency-services experience in operational risk, incident response, and evidence-grade documentation into cybersecurity GRC, AI governance, and security operations. Combines structured learning with practical home-lab work in monitoring, log analysis, network segmentation, and defensive controls. Seeking entry-level cyber and governance roles.
 
-Network & Host Forensics
+## Target roles
 
-Packet inspection (Wireshark, tcpdump)
+Cybersecurity GRC · AI Governance & Risk · Junior SOC / Blue Team · Cloud Security & Compliance
 
-NAT traversal & STUN/ICE behaviour
+## Capabilities
 
-Wireless protocols: AWDL, mDNS, Multicast, Bonjour
+| Area | Experience and learning |
+| --- | --- |
+| Governance and risk | Study of NIST AI RMF, ISO/IEC 42001 concepts, EU AI Act concepts, and Microsoft Responsible AI Standard; policy interpretation and evidence-based documentation |
+| Defensive practice | Wazuh, Suricata, Wireshark/PCAP, network segmentation, and Linux firewall and kernel-setting validation |
+| Cloud and security learning | Microsoft Sentinel coursework; Microsoft Learn study covering Purview, Defender, Entra, Security Copilot, and Azure governance and monitoring |
+| Transferable strengths | High-consequence triage, escalation judgement, statutory record-keeping, operational risk control, stakeholder coordination, and training delivery |
 
-Router event & edge-case analysis (Cobra/DumaOS)
+## Practical security work
 
-Endpoint & System Analysis
+- Built and operate a managed home-lab network using router-on-a-stick architecture, managed switching, VLAN segmentation, and traffic isolation.
+- Deployed Wazuh for log aggregation, alert correlation, and endpoint visibility across Windows and Linux; configured Suricata for network intrusion detection.
+- Performed packet analysis, indicator identification, and attack-chain reconstruction, including an FTP malware-transfer investigation.
+- Prepared structured investigation write-ups and vendor-facing security observations.
+- Evaluated Azure AI, agentic workflows, MCP tooling, and responsible AI controls through Microsoft Learn and independent study.
+- Completed an assisted Linux hardening review with a verified UFW/sysctl configuration finding and isolated network tests.
 
-iOS/macOS sysdiagnoses, crash logs, telemetry
+The [portfolio index](../SOC-Investigations/README.md) identifies published work and projects awaiting supporting artefacts.
 
-System daemons: RunningBoard, Skywalk, NetworkExtension
+## Professional experience
 
-UI/firmware mismatch identification
+### AI Trainer & Annotation Specialist — Remote AI contracting
 
-Baseline vs anomaly comparison
+**2026–present · Remote, Australia**
 
-Log correlation, persistence hunting
+- Evaluate AI-generated outputs for accuracy, relevance, safety, and instruction adherence.
+- Apply structured annotation, quality review, and evidence-based reasoning in remote production workflows.
 
-Tools
+### Independent Cybersecurity & AI Governance Researcher — Self-directed practice
 
-Wireshark, Arkime, tcpdump
+**2025–2026 · Newcastle, NSW**
 
-Sysdiagnose tools, log archive parsers
+- Completed structured development across cybersecurity, Azure, AI governance, secure software, and defensive security while building a practical home lab.
+- Developed governance notes and control-focused analysis informed by AI risk and responsible AI principles.
+- Prepared investigative write-ups using scoped findings and evidence limitations.
 
-Git/GitHub
+### Trainee Paramedic — NSW Ambulance Service
 
-Linux CLI fundamentals
+**August 2019–December 2024 · Newcastle, NSW**
 
-Key Strengths
+- Conducted time-critical risk assessments and selected proportionate responses under incomplete information.
+- Produced legally significant clinical records under privacy, governance, and audit requirements.
+- Worked within escalation pathways and multi-agency response structures.
 
-Strong analytical ability and attention to detail
+### Operational Officer — NSW Rural Fire Service
 
-Clean, repeatable reporting format (SOC-ready)
+**July 2016–July 2019 · NSW**
 
-Comfortable with technical deep dives
+- Planned and delivered multi-site hazard-reduction programs within safety, environmental, and statutory constraints.
+- Supported incident management, coordination, communications, and resource deployment.
+- Delivered training and maintained competency and compliance records.
 
-Calm, systematic threat investigation under pressure
+### Firefighter — Fire and Rescue NSW
 
-Excellent written documentation
+**February 2009–June 2016 · NSW**
 
-Motivated learner — currently pursuing SOC career pathway
+- Applied rapid threat assessment, structured risk controls, and standard procedures across fire, HAZMAT, and rescue incidents.
+- Maintained operational readiness, team accountability, and incident documentation.
 
-Selected Projects
+## Selected learning
 
-BreachFix360 Portfolio (GitHub):
-Contains curated investigation work including:
+- HarvardX — CS50’s Introduction to Cybersecurity.
+- Security Blue Team — Blue Team Junior Analyst training pathway.
+- Linux Foundation — LFEL1012 Secure AI/ML Driven Software Development; LFS120 Conversational AI Ensuring Compliance and Mitigating Risks; LFS118 Ethical Principles for Conversational AI.
+- LinkedIn Learning — Building an AI Governance Program.
+- LinkedIn Learning / United Nations University — Responsible AI in a Global Context Professional Certificate.
+- Microsoft Learn — 69 completed modules, 13 learning paths, and 50 hours 59 minutes of recorded training as of 1 October 2026, covering Azure governance, security, identity, compliance, and AI.
 
-AWDL Wi-Fi P2P event analysis
+See [Qualifications](Qualifications.md) for dates, source scope, and additional course completions. Microsoft learning paths and exam-preparation courses are not presented as Microsoft exam certifications.
 
-STUN/Multicast behaviour correlation
+## Community involvement
 
-Port 443 loopback anomalies
+**Microsoft Azure Q&A Champions Program — community participant**
 
-Router edge-case detection
+Developing Azure technical communication and troubleshooting through community workflows and preparation of scoped, customer-focused responses. This participation is separate from Microsoft employment.
 
-System-log anomalies (RunningBoard, Skywalk, UI masking)
+## Formal qualifications
 
-Device firmware/UI mismatch case studies
+As listed in the supplied professional CV:
 
-Network-level forensic case writeups
+- Diploma of Emergency Healthcare.
+- Certificate IV in Leadership & Management.
+- Certificate IV in Emergency Management.
 
-Professional Background
+## Availability
 
-Former emergency services responder — resilient, disciplined, used to high-stress environments and rapid problem-solving. Transitioning into cybersecurity with a strong defensive mindset and evidence-driven approach.
-
-Education & Training
-
-Harvard University CS50X Introduction to Cybersecurity 
-
-Security Blue Team Junior Analyst
-
-Linux Foundation Introduction to Linux
-
-Linux Foundation OWASP Top Ten Security Threats
-
-Certificate IV Leadership and Management
-
-Currently studying: Home Labs - Hack The Box
-
-Self-directed DFIR & network forensics practice
-
-Multiple technical case studies (public GitHub)
-
-Availability
-
-24/7 — rotating shifts, weekends, nights, SOC roster friendly.
-
-Contact
-
-Email: dseabrook@outlook.com.au
-
-GitHub: github.com/davjod666-dot
-
-Location: NSW, Australia
+Australian citizen; immediate availability. Open to Sydney, Newcastle, and remote or hybrid opportunities. References available on request.
