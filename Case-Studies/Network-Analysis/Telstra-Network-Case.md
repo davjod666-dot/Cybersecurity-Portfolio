@@ -1,73 +1,39 @@
-# 🛰️ Telstra Router Log Investigation – DHCP, TR-069 & Line Drops  
-**Analyst:** D. Seabrook  
-**Category:** ISP Log Analysis  
-**Context:**  
-Router displayed frequent DHCP renewals, TR-069 polling, NTP drift, and periodic WAN dropouts.
+# Telstra Router Review: DHCP, Management Traffic, and WAN Events
 
----
+**Analyst:** David Seabrook
 
-## 🎯 Trigger Event
-- Router time fell out of sync → causing HTTPS errors  
-- DHCP churn observed during quiet hours  
-- Multiple ACS (TR-069) contact attempts  
-- Sudden WAN drops following a local outage reported
+**Original notes:** 2025
 
----
+**Publication type:** Selected retrospective learning brief; editorial review in October 2026.
 
-## 📁 Evidence Collected
-- Telstra Cobra router logs  
-- WAN connection history  
-- Device event tables  
-- NTP sync error messages  
+## Question
 
----
+Investigate reported lease renewals, management traffic, clock drift, and WAN instability.
 
-## 🔍 Analysis
+## Reported observations
 
-### **1. TR-069 Remote Management**
-TR-069 is legitimate for Telstra’s modem management.  
-Polling intervals matched their documentation.
+- The earlier notes describe DHCP renewals and TR-069-related traffic.
+- Time drift was associated with HTTPS/certificate errors.
+- WAN events were compared with reported outages and maintenance windows.
+- The notes report that time resynchronisation resolved observed errors.
 
-### **2. DHCP Renewals**
-Lease renewal timings aligned with ISP defaults.  
-No rogue DHCP servers detected.
+These observations are summarised from the earlier write-up. Complete original captures, timestamped logs, and collection metadata are not published here and were not newly authenticated during this editorial review.
 
-### **3. NTP Drift**
-Router time fell behind by hours.  
-This caused:
+## Assessment and limits
 
-- certificate validation failures  
-- HTTPS connection issues  
-- misleading network telemetry  
+The investigation favoured service-management and stability explanations. The published summary does not include management endpoint validation, lease values, outage references, or before/after timestamps sufficient to independently establish all causal claims. Malicious control was not established in the published notes.
 
-NTP resync resolved the errors.
+## Validation requirements
 
-### **4. WAN Dropouts**
-Dropped sessions correlated exactly with:
+1. Record the router model, firmware, event timestamps, and clock offset.
+2. Verify management endpoints against provider information.
+3. Compare DHCP values and lease timing with the actual configuration.
+4. Include outage references and before/after evidence for time-related error resolution.
 
-- local outages  
-- reported line instability  
-- post-maintenance reboot window  
+The steps above identify evidence needed for a stronger assessment; they are not presented as newly completed tests.
 
----
+## Investigation value
 
-## 🚨 Indicators Observed
-| Indicator | Finding | Assessment |
-|----------|---------|-----------|
-| TR-069 | Expected | Benign |
-| Time drift | Significant | Benign but disruptive |
-| DHCP churn | Present | Normal |
-| WAN drops | Present | ISP-related |
+This case focuses on scoping observations, comparing alternative explanations, and identifying the evidence needed for a defensible conclusion. Earlier versions remain available in Git history.
 
----
-
-## 🧠 Conclusion
-All anomalies were attributed to **normal ISP behaviour**, NTP issues, and external outages.  
-No malicious network control or interception detected.
-
----
-
-## 🛡️ Recommendations
-- Replace router if WAN instability persists  
-- Maintain consistent NTP sync  
-- Run periodic manual log collection for baseline comparisons  
+[SOC index](../../SOC-Investigations/README.md) · [Investigation methods](../../Tools-And-Methods/README.md)

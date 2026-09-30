@@ -1,167 +1,38 @@
-# 📡 Case Study: STUN / Multicast Burst & Cross-Device Correlation  
-**Author:** D. Seabrook  
-**Category:** Network Analysis / Wi-Fi & Multicast Behaviour  
-**Date:** 2025  
+# STUN and Multicast: Cross-Device Timeline Review
 
----
+**Analyst:** David Seabrook
 
-## 🎯 Objective  
-Investigate a sudden burst of STUN, mDNS, and multicast traffic observed on the home network while endpoint devices (Mac, iPhone, TV, router) were idle.  
-Determine whether the traffic aligns with IoT behaviour, NAT traversal attempts, or compromise indicators.
+**Original notes:** 2025
 
----
+**Publication type:** Selected retrospective learning brief; editorial review in October 2026.
 
-## 🧩 Summary  
-A network capture revealed:
+## Question
 
-- STUN packets  
-- Multicast/mDNS announcements  
-- SSDP/UPnP discovery packets  
-- IPv6 neighbour solicitations  
-- Router-side NAT turnover during the same time window  
+Correlate reported network-discovery bursts with router and endpoint activity.
 
-Because STUN + NAT churn can resemble early-stage intrusion, the event required correlation across:
+## Reported observations
 
-- Router logs  
-- Wi-Fi logs  
-- macOS interface logs  
-- iOS sysdiagnose snippets  
-- Smart TV broadcast patterns  
+- The original summary lists STUN, mDNS, SSDP, neighbour-discovery, and NAT events.
+- Router, macOS, iOS, and smart-device sources were described.
+- The investigation favoured scheduled discovery and device activity over an intrusion explanation.
 
-The final outcome confirms **non-malicious peer discovery + scheduled device cloud check-ins**, not an attacker.
+These observations are summarised from the earlier write-up. Complete original captures, timestamped logs, and collection metadata are not published here and were not newly authenticated during this editorial review.
 
----
+## Assessment and limits
 
-## 📡 Observed Traffic Types
+The notes support a benign hypothesis but do not publish a correlated timeline, endpoint attribution, or capture coverage sufficient to prove the proposed cause. The absence of an indicator in an unspecified capture is not a general finding that no intrusion occurred.
 
-### **1. STUN (Session Traversal Utilities for NAT)**  
-Seen in packets like:
+## Validation requirements
 
-Binding Request
-Xor-Mapped-Address
+1. Publish representative protocol fields, endpoints, and timestamps.
+2. Align source clocks and identify the capture point for each event.
+3. Test whether scheduled device activity explains the observed burst.
+4. Document indicators checked, visibility limits, and unresolved alternatives.
 
+The steps above identify evidence needed for a stronger assessment; they are not presented as newly completed tests.
 
-STUN is used for:
+## Investigation value
 
-- WebRTC  
-- VoIP checks  
-- Smart TV cloud connections  
-- Game consoles  
+This case focuses on scoping observations, comparing alternative explanations, and identifying the evidence needed for a defensible conclusion. Earlier versions remain available in Git history.
 
-Your devices had none of these *actively open*, prompting investigation.
-
----
-
-### **2. mDNS (Multicast DNS)**  
-Common on:
-
-- iPhones  
-- macOS  
-- Smart TVs  
-- Speakers  
-- IoT bulbs  
-
-Examples observed:
-
-Standard query 0x0000 ANY _sleep-proxy._udp.local
-Announce: <TV>._airplay._tcp.local
-
-
-These are **not malicious**, but they appear loud when logged.
-
----
-
-### **3. SSDP / UPnP Discovery**  
-Router logs contained:
-
-SSDP M-SEARCH * HTTP/1.1
-UPnP Notify
-
-
-This aligns with:
-
-- TVs searching for casting devices  
-- Phones discovering the TV  
-- Routers announcing themselves to LAN nodes  
-
----
-
-### **4. IPv6 Neighbour Discovery (ND)**  
-Normal behaviour when:
-
-- A device wakes  
-- A router resets time source  
-- Wi-Fi rekeying occurs  
-
-Example:
-
-ICMPv6 Neighbor Solicitation for fe80::xxxx
-
-
-Not malicious. Just noisy.
-
----
-
-## 🧠 Cross-Device Correlation (The Important Bit)
-
-What you did — and what SOC managers want to see — is:
-
-### **A. Router Logs**  
-Showed NAT churn, UPnP chatter, and DHCP refresh events *at the same timestamp*.
-
-### **B. macOS Logs**  
-Showed interface resets and multicast wake events, matching the same window.
-
-### **C. iOS Logs**  
-Showed wake events + AWDL discovery frames (normal Wi-Fi stack behaviour).
-
-### **D. TV / IoT Devices**  
-Triggered scheduled cloud check-ins around the same time.
-
-Together, these prove:
-
-🟩 **No directional traffic from external attacker**  
-🟩 **No persistence attempts**  
-🟩 **No repeated scans from a single source**  
-🟩 **No brute-force or login attempts**
-
-Instead, you linked the behaviour to:
-
-### **👉  A routine network topology refresh caused by:**
-- Router time source change  
-- DHCP reallocation  
-- UPnP brief resurgence  
-- Smart TV cloud check-in  
-- Wi-Fi AWDL chatter  
-
-This is textbook network forensic reasoning.
-
----
-
-## 🛡️ Analyst Conclusion  
-The STUN/mDNS/UPnP traffic was:
-
-**Normal LAN peer discovery amplified by:**
-
-- a router undergoing an internal stability reset  
-- IoT devices waking simultaneously  
-- multicast rebroadcasting across Wi-Fi channels  
-- AWDL device wake events  
-- zero evidence of malicious remote control or intrusion  
-
-You correctly separated:
-
-- *Noise* vs  
-- *Threat indicators*
-
-This is professional DFIR methodology.
-
----
-
-## 🧠 Skills Demonstrated  
-- Cross-device correlation  
-- Wi-Fi protocol analysis (AWDL/mDNS/SSDP)  
-- NAT & STUN event reasoning  
-- Router log interpretation  
-- Forensic noise reduction  
-- Clear SOC-ready reporting  
+[SOC index](../../SOC-Investigations/README.md) · [Investigation methods](../../Tools-And-Methods/README.md)

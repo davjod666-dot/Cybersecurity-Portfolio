@@ -1,121 +1,58 @@
-🛡️ David Seabrook Cybersecurity Portfolio
+# David Seabrook
 
+## AI Governance, Cyber Risk & Security Operations
 
-Analyst: D. Seabrook
-Location: Newcastle, NSW, Australia
-Focus Areas: SOC Analysis • DFIR • Network Defence • Incident Response • System Forensics
-Approach: Evidence-Driven • Log-First Learning • Hands On
+**Newcastle, NSW, Australia · Entry-level AI GRC and SOC opportunities**
 
+I’m transitioning 15+ years of frontline emergency-services experience into cybersecurity governance, AI risk, and security operations. My background spans Fire and Rescue NSW, the NSW Rural Fire Service, and NSW Ambulance. It taught me to assess risk under uncertainty, follow escalation pathways, and produce records that stand up to scrutiny.
 
-🔍 About Me
+Today, I combine AI evaluation work, structured governance study, and hands-on defensive security practice. My interests sit where technical evidence meets accountable decision-making: what a system is doing, which risks matter, how controls are tested, and what the evidence actually supports.
 
+## Explore the portfolio
 
-I am a career changer after 20 years in Emergency Services and Risk Management. I have chosen the Blue Team path as it aligns with my work experience, skills and way of thinking. I have chosen my own study package accordingly with a focus on Blue Team Concepts. Im an Junior SOC/DFIR/Vulnerability analyst who takes a hands-on, investigation-first approach to learning.
-Instead of spending wasted months stuck in theory, I have immersed myself directly in:
+| Area | What you’ll find |
+| --- | --- |
+| [AI governance and responsible AI](AI-Governance/README.md) | Study focus, evidence requirements, and an assessment template |
+| [Risk and control assurance](Risk-And-Controls/README.md) | A worked host-hardening control register and validation limits |
+| [SOC investigations](SOC-Investigations/README.md) | Case-study index, technical practice, and publication scope |
+| [Qualifications and learning](Documents/Qualifications.md) | Dated course completions, learning paths, and evidence links |
+| [CV](Documents/CV_David_Seabrook.md) | Professional experience, lab practice, and target roles |
 
-Real logs
+**Start with:** [Linux hardening: the UFW sysctl conflict](Case-Studies/Linux-Hardening/UFW-Sysctl-Conflict.md). It connects a concrete configuration finding with control validation and a clear statement of residual risk.
 
-Real artefacts
+## Experience and current practice
 
-Real anomalies
+- **AI evaluation:** reviewing generated outputs for accuracy, relevance, safety, and instruction adherence in remote contracting work.
+- **Defensive labs:** a segmented home network, Wazuh log aggregation and endpoint visibility, Suricata intrusion detection, and packet analysis.
+- **Governance learning:** responsible AI, secure AI/ML development, conversational AI risk, and AI governance program design.
+- **Operational experience:** high-consequence triage, statutory documentation, incident escalation, and multi-agency coordination.
 
-Real incidents using real tools
+Practical projects described in my CV are distinguished from coursework and from artefacts currently published here. The [SOC index](SOC-Investigations/README.md) identifies that distinction.
 
-The quickest way to become effective in blue team work is to touch the data, break things, fix things, and study systems under real conditions. This portfolio reflects exactly that — a grounded, practical progression into cybersecurity built on forensic evidence, problem-solving, and log correlation, not guesswork.
+## How I document findings
 
-I’m fresh, but I’m serious about this path — and this repo is the proof.
+**Observation → hypothesis → validation → assessment → control decision.**
 
+I separate reported observations from confirmed results, record limits, and consider alternative explanations. Two retrospective network learning briefs are retained in the selected SOC section. Earlier device and network notes are separated into a learning archive. Original captures and complete timestamped logs are not published for the retrospective work.
 
-📦 What You’ll Find Here
+See [tools and methods](Tools-And-Methods/README.md) for the evidence standard and [portfolio highlights](Portfolio-Highlights.md) for selected work.
 
-This repository contains a curated collection of my cybersecurity work, including:
+## Training highlights
 
-iOS/macOS system log analysis
+- HarvardX — CS50’s Introduction to Cybersecurity.
+- Security Blue Team — Blue Team Junior Analyst training pathway.
+- Linux Foundation — secure AI/ML development and conversational AI ethics and risk courses.
+- LinkedIn Learning — Building an AI Governance Program.
+- LinkedIn Learning / United Nations University — Responsible AI in a Global Context Professional Certificate.
+- Microsoft Learn — cloud governance, identity, security, compliance, and Security Copilot learning.
 
-Network forensics & baseline deviation detection
+Course completion and learning-path completion are labelled as such; exam-based certification is claimed only where supported. [View the qualification inventory](Documents/Qualifications.md).
 
-Router and NAT traversal investigations
+## Contact
 
-Wireless protocol anomalies (AWDL, STUN, mDNS, FlowSwitch)
+- [LinkedIn](https://www.linkedin.com/in/david-s-392aa9432)
+- [Microsoft Learn transcript](https://learn.microsoft.com/en-us/users/davidseabrook-9387/transcript/7o8oueyo1z6ke5v)
+- [Credly profile](https://www.credly.com/users/david-seabrook.dd4d737b)
+- [seabrook.research@proton.me](mailto:seabrook.research@proton.me)
 
-Device state forensics (RunningBoard, Skywalk, NetworkExtension)
-
-UI deception vs backend behaviour analysis
-
-Repeatable SOC-ready case studies
-
-Evidence-based incident writeups
-
-All content has been cleaned, standardised, and structured for readability and recruiter evaluation.
-
-📁 Repository Layout (GitHub-Safe, Non-Wrapping)
-<pre> BreachFix360-Portfolio/ │ ├── Case-Studies/ │ ├── Network-Analysis/ │ │ ├── AWDL-WiFi-Analysis.md │ │ ├── Port443-Loopback-Anomaly.md │ │ ├── STUN-Multicast-Correlation.md │ │ ├── Telstra-Network-Case.md │ │ └── Telstra-Router-Edge-Event.md │ │ │ └── System-Log-Analysis/ │ ├── 1-Device-State-Mismatch.md │ ├── 2-RunningBoard-Telemetry-Anomaly.md │ ├── 3-Skywalk-NetworkExtension-Anomaly.md │ ├── 4-RunningBoard-Telemetry-Anomaly.md │ ├── 5-STUN-Multicast-Anomaly.md │ ├── 6-AWDL-Discovery-Anomaly.md │ ├── 7-Skywalk-FlowSwitch-DeepTunnel.md │ └── 8-UI-Masking-vs-Backend-Correlation.md │ ├── Documents/ │ └── CV_David_Seabrook.md │ ├── Tools-And-Methods/ │ └── .keep │ ├── Portfolio-Highlights.md └── README.md </pre>
-
-🧠 Key Competencies
-
-🛰️ SOC & DFIR Foundations BLUE TEAM
-
-Log correlation and anomaly detection
-
-Incident triage and evidence grouping
-
-Mapping UI behaviour vs backend events
-
-Identifying false positives vs genuine indicators
-
-
-📡 Network & Protocol Analysis
-
-Wireshark, tcpdump, pcaps, router logs
-
-NAT traversal, STUN/mDNS behaviour
-
-P2P interface behaviour (AWDL)
-
-Hidden tunnel & flow control anomalies (FlowSwitch/Skywalk)
-
-
-📱 Mobile & System Forensics
-
-iOS/macOS artefact analysis
-
-RunningBoard state correlation
-
-NetworkExtension / NECP evaluation
-
-Device state, process state, and event correlation
-
-
-🧰 Technical Habits & Methods
-
-Structured case documentation
-
-Evidence-driven conclusions
-
-Zero speculation
-
-Repeatable investigation templates
-
-Clear, professional reporting
-
-
-⭐ Highlights
-
-Eight fully documented system-log case studies covering device behaviour, backend anomalies, and telemetry analysis.
-
-Multiple network investigations demonstrating protocol interpretation and root-cause analysis.
-
-Standardised SOC-ready format used across all case files.
-
-Demonstrated ability to analyse real-world artefacts, identify deviations from expected behaviour, and articulate findings clearly.
-
-Built from scratch with hands-on exploration instead of relying solely on coursework.
-
-
-📬 Contact
-
-For opportunities, discussions, or security conversations:
-
-Email: dseabrook@outlook.com.au
-GitHub: github.com/davjod666-dot
-Location: NSW, Australia
+Open to opportunities in Newcastle, Sydney, and remote or hybrid environments.
