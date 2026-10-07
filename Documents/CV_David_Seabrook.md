@@ -32,7 +32,7 @@ Developing interests: AI governance and defensive security operations.
 - Practised packet analysis and indicator identification, including an FTP malware-transfer exercise.
 - Wrote summaries of network and system-log investigations.
 - Studied Azure AI, agentic workflows, MCP tooling, and responsible AI controls through Microsoft Learn and independent study.
-- Defined workstation hardening requirements and documented a Codex-assisted review that identified conflicting UFW/sysctl values and a reload override path through configuration and code inspection. Recorded post-change checks included live-value verification after reload and isolated ping and scan-alert tests; the pre-fix reset was not deliberately reproduced, and reboot persistence was not tested.
+- Defined workstation hardening requirements and documented a Codex-assisted review that identified conflicting UFW/sysctl values and a reload override path through configuration and code inspection. Recorded post-change checks included live-value verification after reload and isolated ping and scan-alert tests; the pre-fix reset was not deliberately reproduced. A subsequent post-reinstall follow-up restored ping and IPv6 settings and verified them across one reboot, recorded LAN ping-control checks, and installed a replacement scan watcher with ten passing offline tests. Live scan-alert delivery and watcher reboot persistence remain untested.
 
 The [portfolio index](../SOC-Investigations/README.md) identifies published work and projects awaiting supporting artefacts.
 

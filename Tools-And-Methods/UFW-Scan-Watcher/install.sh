@@ -12,7 +12,9 @@ done
 install -m 755 "$source_dir/scan_watcher.py" "$HOME/.local/bin/portfolio-scan-watcher.py"
 install -m 644 "$source_dir/ufw-scan-watcher.service" "$HOME/.config/systemd/user/ufw-scan-watcher.service"
 systemctl --user daemon-reload
-systemctl --user enable --now ufw-scan-watcher.service
+systemctl --user enable ufw-scan-watcher.service
+# Restart also starts an inactive service and loads updated code on reinstall.
+systemctl --user restart ufw-scan-watcher.service
 systemctl --user is-active ufw-scan-watcher.service
 journalctl --user -u ufw-scan-watcher.service -n 10 --no-pager
 notify-send -a 'UFW scan watcher' 'Watcher notification check' 'Installation check only; this is not a detected scan.'

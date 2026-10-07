@@ -36,3 +36,7 @@ This is the documentation standard for future work and updates to retrospective 
 | Git / GitHub | Versioned documents and reviewable changes |
 
 See [SOC investigations](../SOC-Investigations/README.md) for the distinction between published case summaries and CV-reported lab projects.
+
+## Published implementation
+
+[Replacement UFW scan watcher](UFW-Scan-Watcher/README.md): source, user-service installer, deterministic threshold/timing tests and documented coverage limits.

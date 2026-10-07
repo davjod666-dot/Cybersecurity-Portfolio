@@ -2,7 +2,7 @@
 
 New implementation; the original script was not recovered. No firewall changes are made.
 
-Run `bash install.sh` from the saved bundle as your normal desktop user (not with sudo). It reruns tests, checks kernel journal access, backs up any existing matching files, installs a user service, enables it, and sends an explicitly labelled notification check. Confirm the service remains active and the notification appears. Installation cannot be confirmed from this restricted agent session because the user systemd bus is inaccessible.
+Run `bash install.sh` from the saved bundle as your normal desktop user (not with sudo). It reruns tests, checks kernel journal access, backs up any existing matching files, installs a user service, enables and restarts it to load the installed code, and sends an explicitly labelled notification check. Confirm the service remains active and the notification appears. Installation on the assessed workstation was confirmed by owner-supplied service output; verification limits are recorded below. Reinstalling restarts the watcher and clears its in-memory window/cooldown state.
 
 ## Behaviour
 
