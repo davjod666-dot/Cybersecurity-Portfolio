@@ -25,11 +25,24 @@
 
 The [UFW/sysctl case study](../Case-Studies/Linux-Hardening/UFW-Sysctl-Conflict.md) describes the inspected configuration conflict and reload code path, the changes, and recorded post-change results. This register summarises recorded session checks; a complete raw command-output bundle is not included in this repository. Configuration and live-value checks establish the settings inspected, not the effectiveness of every control against network traffic or exploitation. The case study’s read-only commands are verification guidance, not a preserved session transcript, and do not verify every row of this register. Reboot persistence was not tested; this limitation applies across the register.
 
-## Follow-up
+## Replacement-installation follow-up — 6–7 October 2026
 
-- Check settings again after reboot and relevant package updates.
-- Review existing firewall exceptions when application needs change.
-- Validate detection coverage against slower and distributed probes in an authorised lab.
-- Retain redacted output captures alongside future control changes.
+The table above remains the historical 1 October assessment, not an assertion about every control on the replacement installation. The owner confirmed a crash/reinstall; package history records installation on 4 October. The following evidence is separately attributed to owner-supplied workstation captures and manually reported Windows outcomes. See the [case study follow-up](../Case-Studies/Linux-Hardening/UFW-Sysctl-Conflict.md#follow-up-evidence--67-october-2026).
 
-No framework compliance status or risk score is assigned by this register.
+| Objective | Current follow-up evidence | Remaining limit |
+| --- | --- | --- |
+| Restore ping policy | UFW/custom ping assignments restored to `1`; Echo Request DROP restored after an initial ACCEPT discrepancy; live `1`, DROP and active UFW survived one reboot | Original pre-fix reset remains unreproduced; other traffic paths/future updates unverified |
+| Disable IPv6 | Persistent all/default disable assignments, live flags `1`, wired profile `disabled`, and no addresses/routes shown before/after the reboot | Per-interface inventory, other profiles and IPv6 packet tests not supplied |
+| Attribute ping controls | DROP counter delta of four; peer-scoped ACCEPT counted four requests with reported timeouts; replies reported with kernel value `0`; final `1` and exception cleanup confirmed | No packet capture/complete Windows transcript; full matrix, including firewall-only test with kernel suppression off, not run |
+| Restore probe alerting | New watcher published; ten offline parser/threshold/window/cooldown tests passed; installed user service enabled/active; Python startup logged; standalone test notification visible | Original script unrecovered; live log-to-alert and login/reboot persistence untested; logging limits reduce coverage |
+
+No evidence of unauthorised alteration is inferred from the reinstall discrepancies. Other historical register rows have not been reassessed on the replacement installation. No compliance status or risk score is assigned.
+
+## Scoped remaining work
+
+- Retain evidence links and distinguish owner reports, read-backs, offline tests and live behaviour.
+- Validate replacement watcher ingestion-to-alert and session/reboot activation when needed; do not treat thirty sent probes as thirty log records.
+- Use the case study's safe verification procedures for a fuller ping matrix; current evidence supports the observed path only.
+- Reassess other controls after reinstall or relevant updates and review firewall exceptions when application needs change.
+
+[Replacement watcher source, tests and limits](../Tools-And-Methods/UFW-Scan-Watcher/README.md)

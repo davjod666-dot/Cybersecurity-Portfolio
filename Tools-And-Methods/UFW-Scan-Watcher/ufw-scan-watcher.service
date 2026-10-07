@@ -1,0 +1,12 @@
+[Unit]
+Description=Log-based UFW blocked probe burst alerts
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/python3 %h/.local/bin/portfolio-scan-watcher.py
+Restart=on-failure
+RestartSec=5
+NoNewPrivileges=yes
+
+[Install]
+WantedBy=default.target

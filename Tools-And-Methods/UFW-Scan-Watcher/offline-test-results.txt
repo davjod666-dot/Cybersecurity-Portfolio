@@ -1,0 +1,15 @@
+test_29_30_31 (test_scan_watcher.Tests.test_29_30_31) ... ok
+test_bounded_records (test_scan_watcher.Tests.test_bounded_records) ... ok
+test_carry_over (test_scan_watcher.Tests.test_carry_over) ... ok
+test_cooldown_edges (test_scan_watcher.Tests.test_cooldown_edges) ... ok
+test_distinct (test_scan_watcher.Tests.test_distinct) ... ok
+test_no_input_no_alert_and_no_stale_threshold (test_scan_watcher.Tests.test_no_input_no_alert_and_no_stale_threshold) ... ok
+test_parser (test_scan_watcher.Tests.test_parser) ... ok
+test_sources (test_scan_watcher.Tests.test_sources) ... ok
+test_suppression_does_not_extend_cooldown (test_scan_watcher.Tests.test_suppression_does_not_extend_cooldown) ... ok
+test_window_edges (test_scan_watcher.Tests.test_window_edges) ... ok
+
+----------------------------------------------------------------------
+Ran 10 tests in 0.021s
+
+OK
